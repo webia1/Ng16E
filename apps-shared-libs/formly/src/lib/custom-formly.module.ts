@@ -38,8 +38,4 @@ import { formlyValidationMessages } from './formly-validation-messages/factory-m
     TranslateModule,
   ],
 })
-export class CustomFormlyModule {
-  constructor() {
-    console.log('CustomFormlyModule initialized');
-  }
-}
+export class CustomFormlyModule {}
