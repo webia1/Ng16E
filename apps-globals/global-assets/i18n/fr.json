@@ -1,5 +1,5 @@
 {
-  "VALIDATION": {
-    "REQUIRED": "Ce champ est obligatoire."
-  }
+  "FORM_EMAIL_LABEL": "E-mail",
+  "FORM_EMAIL_PLACEHOLDER": "Entrez votre e-mail",
+  "VALIDATION_REQUIRED": "Ce champ est obligatoire."
 }

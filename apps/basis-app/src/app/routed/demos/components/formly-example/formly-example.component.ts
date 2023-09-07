@@ -15,12 +15,7 @@ export class FormlyExampleComponent {
   fields: Array<FormlyFieldConfig> = [
     {
       key: 'email',
-      type: 'input',
-      props: {
-        label: 'Email address',
-        placeholder: 'Enter email',
-        required: true,
-      },
+      type: 'app-email',
     },
   ];
 

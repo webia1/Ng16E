@@ -10,7 +10,8 @@ import {
 } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { translateValidationMessages } from './validation/messages';
+import { formlyValidationMessages } from './formly-validation-messages/factory-messages';
+import { formlyCustomTypes } from './formly-custom-types/factory-types';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, 'global-assets/i18n/', '.json');
@@ -36,7 +37,13 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     {
       provide: FORMLY_CONFIG,
       multi: true,
-      useFactory: translateValidationMessages,
+      useFactory: formlyValidationMessages,
+      deps: [TranslateService],
+    },
+    {
+      provide: FORMLY_CONFIG,
+      multi: true,
+      useFactory: formlyCustomTypes,
       deps: [TranslateService],
     },
   ],
