@@ -23,7 +23,7 @@ import { DemosModule } from './routed/demos/demos.module';
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
     TranslateModule.forRoot({
-      defaultLanguage: 'de',
+      defaultLanguage: APP_LANGUAGES.DE,
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
