@@ -1,1 +1,1 @@
-export * from './lib/formly.module';
+export * from './lib/custom-formly.module';
