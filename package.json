@@ -29,6 +29,7 @@
     "@ngx-translate/http-loader": "^8.0.0",
     "@nx/angular": "16.8.0",
     "axios": "^1.0.0",
+    "material-icons": "^1.13.11",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

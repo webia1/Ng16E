@@ -25,7 +25,7 @@
           }
         ],
         "styles": [
-          "apps-globals/global-assets/styles/corporate-basis.scss",
+          "apps-globals/global-assets/styles/apps-globals-basis.scss",
           "apps/basis-app/src/styles.scss"
         ],
         "scripts": []

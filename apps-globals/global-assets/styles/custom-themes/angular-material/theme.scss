@@ -5,7 +5,9 @@
  */
 
 @use '@angular/material' as mat;
-@import './custom-themes/green';
+@import './green';
+@import './material-icons';
+
 @include mat.core();
 
 /**
