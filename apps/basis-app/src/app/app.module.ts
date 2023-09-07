@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 import { DemosModule } from './routed/demos/demos.module';
-import { FormlyModule } from './shared/formly/formly.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,7 +12,6 @@ import { FormlyModule } from './shared/formly/formly.module';
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
     DemosModule,
-    FormlyModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
