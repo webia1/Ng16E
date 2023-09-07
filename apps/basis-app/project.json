@@ -20,12 +20,12 @@
           "apps/basis-app/src/assets",
           {
             "glob": "**/*",
-            "input": "global/global-assets/i18n/",
+            "input": "apps-globals/global-assets/i18n/",
             "output": "global-assets/i18n/"
           }
         ],
         "styles": [
-          "global/global-assets/styles/corporate-basis.scss",
+          "apps-globals/global-assets/styles/corporate-basis.scss",
           "apps/basis-app/src/styles.scss"
         ],
         "scripts": []
