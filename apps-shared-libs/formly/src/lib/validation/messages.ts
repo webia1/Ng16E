@@ -5,7 +5,7 @@ export function translateValidationMessages(ts: TranslateService) {
     validationMessages: [
       {
         name: 'required',
-        message: () => ts.instant('VALIDATION.REQUIRED'),
+        message: () => ts.stream('VALIDATION.REQUIRED'),
       },
     ],
   };
