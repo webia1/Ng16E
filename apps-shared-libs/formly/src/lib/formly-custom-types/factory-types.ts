@@ -7,11 +7,15 @@ export function formlyCustomTypes(ts: TranslateService) {
         name: 'app-email',
         extends: 'input',
         defaultOptions: {
-          templateOptions: {
+          props: {
             type: 'email',
-            label: ts.stream('FORM_EMAIL_LABEL'),
-            placeholder: ts.stream('FORM_EMAIL_PLACEHOLDER'),
             required: true,
+          },
+          hooks: {
+            onInit: (field) => {
+              field.props.label = ts.instant('FORM_EMAIL_LABEL');
+              field.props.placeholder = ts.instant('FORM_EMAIL_PLACEHOLDER');
+            },
           },
         },
       },
