@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { CustomFormlyModule } from '@app-shared-libs/formly';
 import { CustomMaterialModule } from '@app-shared-libs/material';
-import { KeyValueObjType } from '@apps-globals/types';
 
 import { FormlyExampleComponent } from './components/formly-example/formly-example.component';
 import { MaterialExampleComponent } from './components/material-example/material-example.component';
@@ -17,9 +16,4 @@ import { DemosRoutingModule } from './demos-routing.module';
     CustomFormlyModule,
   ],
 })
-export class DemosModule {
-  constructor() {
-    const x: KeyValueObjType = { a: 0 };
-    console.log('Global Type Example', x);
-  }
-}
+export class DemosModule {}
