@@ -8,8 +8,8 @@ import {
   TranslateService,
 } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { I18N_FILE_EXTENSION, I18N_PATH } from './config';
-import { APP_LANGUAGES } from './config';
+
+import { APP_LANGUAGES, I18N_FILE_EXTENSION, I18N_PATH } from './config';
 
 @NgModule({
   imports: [
