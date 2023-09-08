@@ -1,20 +1,40 @@
 {
-  "name": "basis-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "projectType": "application",
+  "name": "basis-app",
   "prefix": "ng16-e",
+  "projectType": "application",
   "sourceRoot": "apps/basis-app/src",
   "tags": [],
   "targets": {
     "build": {
+      "configurations": {
+        "development": {
+          "buildOptimizer": false,
+          "extractLicenses": false,
+          "namedChunks": true,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "budgets": [
+            {
+              "maximumError": "1mb",
+              "maximumWarning": "500kb",
+              "type": "initial"
+            },
+            {
+              "maximumError": "4kb",
+              "maximumWarning": "2kb",
+              "type": "anyComponentStyle"
+            }
+          ],
+          "outputHashing": "all"
+        }
+      },
+      "defaultConfiguration": "production",
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/basis-app",
-        "index": "apps/basis-app/src/index.html",
-        "main": "apps/basis-app/src/main.ts",
-        "polyfills": ["zone.js"],
-        "tsConfig": "apps/basis-app/tsconfig.app.json",
         "assets": [
           "apps/basis-app/src/favicon.ico",
           "apps/basis-app/src/assets",
@@ -24,53 +44,18 @@
             "output": "global-assets/i18n/"
           }
         ],
+        "index": "apps/basis-app/src/index.html",
+        "main": "apps/basis-app/src/main.ts",
+        "outputPath": "dist/apps/basis-app",
+        "polyfills": ["zone.js"],
+        "scripts": [],
         "styles": [
           "apps-globals/global-assets/styles/apps-globals-basis.scss",
           "apps/basis-app/src/styles.scss"
         ],
-        "scripts": []
+        "tsConfig": "apps/basis-app/tsconfig.app.json"
       },
-      "configurations": {
-        "production": {
-          "budgets": [
-            {
-              "type": "initial",
-              "maximumWarning": "500kb",
-              "maximumError": "1mb"
-            },
-            {
-              "type": "anyComponentStyle",
-              "maximumWarning": "2kb",
-              "maximumError": "4kb"
-            }
-          ],
-          "outputHashing": "all"
-        },
-        "development": {
-          "buildOptimizer": false,
-          "optimization": false,
-          "vendorChunk": true,
-          "extractLicenses": false,
-          "sourceMap": true,
-          "namedChunks": true
-        }
-      },
-      "defaultConfiguration": "production"
-    },
-    "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
-      "configurations": {
-        "production": {
-          "browserTarget": "basis-app:build:production"
-        },
-        "development": {
-          "browserTarget": "basis-app:build:development"
-        }
-      },
-      "defaultConfiguration": "development",
-      "options": {
-        "proxyConfig": "apps/basis-app/proxy.conf.json"
-      }
+      "outputs": ["{options.outputPath}"]
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -80,26 +65,27 @@
     },
     "lint": {
       "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
           "apps/basis-app/**/*.ts",
           "apps/basis-app/**/*.html"
         ]
-      }
-    },
-    "test": {
-      "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
-      "options": {
-        "jestConfig": "apps/basis-app/jest.config.ts",
-        "passWithNoTests": true
       },
+      "outputs": ["{options.outputFile}"]
+    },
+    "serve": {
       "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
+        "development": {
+          "browserTarget": "basis-app:build:development"
+        },
+        "production": {
+          "browserTarget": "basis-app:build:production"
         }
+      },
+      "defaultConfiguration": "development",
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "proxyConfig": "apps/basis-app/proxy.conf.json"
       }
     },
     "serve-static": {
@@ -107,6 +93,20 @@
       "options": {
         "buildTarget": "basis-app:build"
       }
+    },
+    "test": {
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      },
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/basis-app/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"]
     }
   }
 }
