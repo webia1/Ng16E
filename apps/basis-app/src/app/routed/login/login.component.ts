@@ -1,43 +1,17 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormGroup } from '@angular/forms';
-import { FormlyFieldConfig } from '@ngx-formly/core';
-import { CustomFormlyModule } from '@app-shared-libs/formly';
-import { CustomMaterialModule } from '@app-shared-libs/material';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'ng16-e-login',
   standalone: true,
-  imports: [CommonModule, CustomMaterialModule, CustomFormlyModule],
+  imports: [CommonModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class LoginComponent {
-  form = new FormGroup({});
-  model = { username: '', password: '' };
-  fields: Array<FormlyFieldConfig> = [
-    {
-      key: 'username',
-      type: 'input',
-      templateOptions: {
-        label: 'Username',
-        placeholder: 'Enter username',
-        required: true,
-      },
-    },
-    {
-      key: 'password',
-      type: 'input',
-      templateOptions: {
-        type: 'password',
-        label: 'Password',
-        placeholder: 'Enter password',
-        required: true,
-      },
-    },
-  ];
-
-  submit(model: unknown) {
-    console.log('Model: ', model);
+  handleLogin(event: Event) {
+    const customEvent = event as CustomEvent;
+    console.log('Handling login in parent component:', customEvent.detail);
   }
 }

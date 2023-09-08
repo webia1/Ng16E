@@ -1,1 +1,2 @@
-export * from './lib/apps-shared-libs/reusables.module';
+export * from './lib/reusables.module';
+export * from './lib/components/login/login.component';
