@@ -5,11 +5,6 @@ import { FormlyExampleComponent } from './components/formly-example/formly-examp
 
 const routes: Routes = [
   {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'material',
-  },
-  {
     path: 'material',
     component: MaterialExampleComponent,
   },
