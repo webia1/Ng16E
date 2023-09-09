@@ -1,9 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import {
-  APP_INITIALIZER,
-  CUSTOM_ELEMENTS_SCHEMA,
-  NgModule,
-} from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
@@ -16,8 +12,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
-import { I18N_FILE_EXTENSION, I18N_PATH } from './config';
-import { APP_LANGUAGES } from './config';
+import { APP_LANGUAGES, I18N_FILE_EXTENSION, I18N_PATH } from './config';
 import { DemosModule } from './routed/demos/demos.module';
 
 @NgModule({
