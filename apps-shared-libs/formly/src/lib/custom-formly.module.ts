@@ -5,8 +5,8 @@ import { FORMLY_CONFIG, FormlyModule } from '@ngx-formly/core';
 import { FormlyMatInputModule } from '@ngx-formly/material/input';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
-import { formlyCustomTypes } from './formly-custom-types/factory-types';
-import { formlyValidationMessages } from './formly-validation-messages/factory-messages';
+import { formlyCustomTypes } from './formly-custom-types/formly-types';
+import { formlyValidationMessages } from './formly-validation-messages/formly-messages';
 
 @NgModule({
   imports: [

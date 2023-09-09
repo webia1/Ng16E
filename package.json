@@ -1,14 +1,4 @@
 {
-  "name": "@ng16-e/source",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {
-    "start": "npm run start:fe:be:basis",
-    "start:fe:basis": "nx serve basis-app",
-    "start:be:basis": "nx serve middleware-basis-app",
-    "start:fe:be:basis": "run-p start:fe:basis start:be:basis"
-  },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~16.2.0",
     "@angular/cdk": "^16.2.3",
@@ -82,5 +72,15 @@
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
     "typescript": "~5.1.3"
-  }
+  },
+  "license": "MIT",
+  "name": "@basis/source",
+  "private": true,
+  "scripts": {
+    "start": "npm run start:fe:be:basis",
+    "start:be:basis": "nx serve middleware-basis-app",
+    "start:fe:basis": "nx serve basis-app",
+    "start:fe:be:basis": "run-p start:fe:basis start:be:basis"
+  },
+  "version": "0.0.0"
 }

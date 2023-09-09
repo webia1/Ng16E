@@ -1,7 +1,7 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "basis-app",
-  "prefix": "ng16-e",
+  "prefix": "basis",
   "projectType": "application",
   "sourceRoot": "apps/basis-app/src",
   "tags": [],
