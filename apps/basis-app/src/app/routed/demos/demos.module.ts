@@ -6,9 +6,14 @@ import { CustomMaterialModule } from '@app-shared-libs/material';
 import { FormlyExampleComponent } from './components/formly-example/formly-example.component';
 import { MaterialExampleComponent } from './components/material-example/material-example.component';
 import { DemosRoutingModule } from './demos-routing.module';
+import { LoginExampleComponent } from './components/login-example/login-example.component';
 
 @NgModule({
-  declarations: [MaterialExampleComponent, FormlyExampleComponent],
+  declarations: [
+    MaterialExampleComponent,
+    FormlyExampleComponent,
+    LoginExampleComponent,
+  ],
   imports: [
     CommonModule,
     DemosRoutingModule,
