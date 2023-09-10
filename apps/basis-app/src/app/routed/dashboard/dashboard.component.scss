@@ -1,1 +1,54 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
+.header,
+.footer {
+  flex: 0 0 auto;
+}
+
+.sidenav-container,
+.sidenav-content,
+.main-content {
+  flex: 1 1 auto;
+}
+
+.main-content {
+  padding: 0px 20px;
+}
+
+.sidenav {
+  min-width: 200px;
+  max-width: 360px;
+  padding: 10px;
+
+  .side-menu-titel {
+    padding: 0 5px;
+  }
+
+  hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.footer {
+  height: 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.side-menu-icon.settings {
+  margin-left: 10px;
+}

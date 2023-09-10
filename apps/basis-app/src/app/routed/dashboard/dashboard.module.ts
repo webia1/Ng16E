@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { CustomFormlyModule } from '@app-shared-libs/formly';
+import { CustomMaterialModule } from '@app-shared-libs/material';
+
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 
-
 @NgModule({
-  declarations: [
-    DashboardComponent
-  ],
+  declarations: [DashboardComponent],
   imports: [
     CommonModule,
-    DashboardRoutingModule
-  ]
+    CustomMaterialModule,
+    CustomFormlyModule,
+    DashboardRoutingModule,
+  ],
 })
-export class DashboardModule { }
+export class DashboardModule {}

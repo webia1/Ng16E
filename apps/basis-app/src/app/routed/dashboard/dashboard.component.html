@@ -1,1 +1,38 @@
-<p>dashboard works!</p>
+<div class="dashboard-container">
+  <mat-toolbar class="header">
+    Hauptmenü
+    <span class="spacer"></span>
+    <mat-icon (click)="toggleLeftSidenav()" class="side-menu-icon submenu"
+      >menu</mat-icon
+    >
+    <mat-icon (click)="toggleRightSidenav()" class="side-menu-icon settings"
+      >settings</mat-icon
+    >
+  </mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #leftSidenav mode="side" opened="false" class="sidenav">
+      <div class="side-menu-titel">SubMenü</div>
+      <hr />
+    </mat-sidenav>
+
+    <mat-sidenav
+      #rightSidenav
+      position="end"
+      mode="side"
+      opened="false"
+      class="sidenav"
+    >
+      <div class="side-menu-titel">Modulübersicht</div>
+      <hr />
+    </mat-sidenav>
+
+    <mat-sidenav-content class="sidenav-content">
+      <div class="main-content">
+        <h2>Ausgewähle Module</h2>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <mat-toolbar class="footer">Footer</mat-toolbar>
+</div>
