@@ -2,6 +2,24 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+
+  .language-selector {
+    width: 200px;
+    margin-right: 10px;
+  }
+}
+
+.language-selector {
+  padding-top: 10px;
+}
+
+.compact-mat-select .mat-form-field-flex > .mat-form-field-infix {
+  padding: 0.25em 0em !important;
+}
+
+.compact-mat-select-panel .mat-option {
+  height: 32px;
+  line-height: 32px;
 }
 
 .header,
