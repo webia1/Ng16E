@@ -1,0 +1,17 @@
+.app-login-example {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  formly-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-wrapper {
+    border: 2 px solid green;
+    text-align: right;
+  }
+}
