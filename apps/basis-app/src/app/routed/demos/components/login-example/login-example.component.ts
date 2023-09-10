@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 @Component({
   selector: 'app-login-example',
@@ -19,7 +20,12 @@ export class LoginExampleComponent {
       type: 'app-login-password',
     },
   ];
+
+  constructor(private router: Router) {}
   onSubmit(model: unknown) {
-    console.log(model);
+    console.log('Model: ', model);
+    if (this.form.valid) {
+      this.router.navigate(['/dashboard']);
+    }
   }
 }

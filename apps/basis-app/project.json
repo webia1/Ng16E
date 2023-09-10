@@ -1,7 +1,7 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "basis-app",
-  "prefix": "basis",
+  "prefix": "app",
   "projectType": "application",
   "sourceRoot": "apps/basis-app/src",
   "tags": [],
@@ -47,7 +47,9 @@
         "index": "apps/basis-app/src/index.html",
         "main": "apps/basis-app/src/main.ts",
         "outputPath": "dist/apps/basis-app",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "scripts": [],
         "styles": [
           "apps-globals/global-assets/styles/apps-globals-basis.scss",
@@ -55,7 +57,9 @@
         ],
         "tsConfig": "apps/basis-app/tsconfig.app.json"
       },
-      "outputs": ["{options.outputPath}"]
+      "outputs": [
+        "{options.outputPath}"
+      ]
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -71,7 +75,9 @@
           "apps/basis-app/**/*.html"
         ]
       },
-      "outputs": ["{options.outputFile}"]
+      "outputs": [
+        "{options.outputFile}"
+      ]
     },
     "serve": {
       "configurations": {
@@ -106,7 +112,9 @@
         "jestConfig": "apps/basis-app/jest.config.ts",
         "passWithNoTests": true
       },
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"]
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ]
     }
   }
 }

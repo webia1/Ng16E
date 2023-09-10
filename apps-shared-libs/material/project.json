@@ -1,7 +1,7 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "material",
-  "prefix": "basis",
+  "prefix": "app",
   "projectType": "library",
   "sourceRoot": "apps-shared-libs/material/src",
   "tags": [],
