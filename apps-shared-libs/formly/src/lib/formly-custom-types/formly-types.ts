@@ -17,6 +17,36 @@ export function formlyCustomTypes(ts: TranslateService) {
           },
         },
       },
+      {
+        name: 'app-login-username',
+        extends: 'input',
+        defaultOptions: {
+          props: {
+            type: 'text',
+            required: true,
+          },
+          expressionProperties: {
+            'props.label': () => ts.instant('FORM_LOGIN_USERNAME_LABEL'),
+            'props.placeholder': () =>
+              ts.instant('FORM_LOGIN_USERNAME_PLACEHOLDER'),
+          },
+        },
+      },
+      {
+        name: 'app-login-password',
+        extends: 'input',
+        defaultOptions: {
+          props: {
+            type: 'password',
+            required: true,
+          },
+          expressionProperties: {
+            'props.label': () => ts.instant('FORM_LOGIN_PASSWORD_LABEL'),
+            'props.placeholder': () =>
+              ts.instant('FORM_LOGIN_PASSWORD_PLACEHOLDER'),
+          },
+        },
+      },
     ],
   };
 }

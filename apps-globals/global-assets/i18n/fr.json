@@ -1,5 +1,9 @@
 {
-  "FORM_EMAIL_LABEL": "E-mail",
-  "FORM_EMAIL_PLACEHOLDER": "Entrez votre e-mail",
-  "VALIDATION_REQUIRED": "Ce champ est obligatoire."
+    "FORM_EMAIL_LABEL": "E-mail",
+    "FORM_EMAIL_PLACEHOLDER": "Entrez votre e-mail",
+    "FORM_LOGIN_PASSWORD_LABEL": "Login Password",
+    "FORM_LOGIN_PASSWORD_PLACEHOLDER": "Enter your password",
+    "FORM_LOGIN_USERNAME_LABEL": "Login Username",
+    "FORM_LOGIN_USERNAME_PLACEHOLDER": "Enter your username",
+    "VALIDATION_REQUIRED": "Ce champ est obligatoire."
 }
