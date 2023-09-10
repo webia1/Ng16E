@@ -1,3 +1,4 @@
+import { DashboardModule } from './routed/dashboard/dashboard.module';
 import { HttpClient } from '@angular/common/http';
 import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,7 +22,7 @@ import { DemosModule } from './routed/demos/demos.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
+    RouterModule.forRoot(appRoutes),
     TranslateModule.forRoot({
       defaultLanguage: APP_LANGUAGES.DE,
       loader: {
@@ -30,6 +31,7 @@ import { DemosModule } from './routed/demos/demos.module';
         deps: [HttpClient],
       },
     }),
+    DashboardModule,
     DemosModule,
   ],
   providers: [

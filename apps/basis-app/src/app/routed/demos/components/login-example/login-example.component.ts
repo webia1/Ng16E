@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 @Component({
   selector: 'app-login-example',
@@ -21,11 +21,14 @@ export class LoginExampleComponent {
     },
   ];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private route: ActivatedRoute) {}
   onSubmit(model: unknown) {
     console.log('Model: ', model);
+    console.log('Root Route:', this.route.snapshot.parent);
     if (this.form.valid) {
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/dashboard'], {
+        relativeTo: this.route.root,
+      });
     }
   }
 }
