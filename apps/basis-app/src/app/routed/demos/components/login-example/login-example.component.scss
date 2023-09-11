@@ -14,3 +14,28 @@
     text-align: right;
   }
 }
+
+.app-teaser-box-std {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    #018043 0%,
+    #01783d 30%,
+    #016d34 60%,
+    #01632c 100%
+  );
+  font-size: x-large;
+  color: white;
+}
+
+.app-border-tick-red {
+  border: 1px solid red;
+}
+
+.app-margin-bottom-std {
+  margin-bottom: 20px;
+}
