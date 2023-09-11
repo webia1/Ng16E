@@ -6,8 +6,7 @@ import { LoginExampleComponent } from './components/login-example/login-example.
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: 'login',
+    component: LoginExampleComponent,
   },
   {
     path: 'material',
