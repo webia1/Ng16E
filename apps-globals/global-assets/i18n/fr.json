@@ -1,9 +1,15 @@
 {
+  "APP_HEADER_TITLE": "En-tête de l'application",
+  "APP_LEFT_SIDENAV_TITLE": "Titre du Sidenav gauche",
+  "APP_RIGHT_SIDENAV_TITLE": "Titre de la navigation latérale droite",
+  "DASHBOARD_TITLE": "Titre du tableau de bord",
+  "FOOTER": "Pied de page",
   "FORM_EMAIL_LABEL": "E-mail",
-  "FORM_EMAIL_PLACEHOLDER": "Entrez votre e-mail",
-  "FORM_LOGIN_PASSWORD_LABEL": "Mot de passe",
-  "FORM_LOGIN_PASSWORD_PLACEHOLDER": "Saisissez votre mot de passe",
-  "FORM_LOGIN_USERNAME_LABEL": "Nom d'utilisateur",
-  "FORM_LOGIN_USERNAME_PLACEHOLDER": "Entrez votre pseudo",
+  "FORM_EMAIL_PLACEHOLDER": "Entrez votre email",
+  "FORM_LOGIN_PASSWORD_LABEL": "Mot de passe de connexion",
+  "FORM_LOGIN_PASSWORD_PLACEHOLDER": "Entrez votre mot de passe",
+  "FORM_LOGIN_USERNAME_LABEL": "Nom d'utilisateur de connexion",
+  "FORM_LOGIN_USERNAME_PLACEHOLDER": "Entrez votre nom d'utilisateur",
+  "LOGIN": "Connexion",
   "VALIDATION_REQUIRED": "Ce champ est obligatoire."
 }

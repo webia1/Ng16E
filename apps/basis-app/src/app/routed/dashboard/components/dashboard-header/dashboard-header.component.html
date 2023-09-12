@@ -1,20 +1,6 @@
 <mat-toolbar class="header">
-  Hauptmenü
+  {{ 'APP_HEADER_TITLE' | translate }}
   <span class="spacer"></span>
-  <!-- <mat-form-field
-    appearance="fill"
-    class="language-selector compact-mat-select"
-  >
-    <mat-select
-      placeholder="Sprache"
-      [(value)]="selectedLanguage"
-      panelClass="compact-mat-select-panel"
-    >
-      <mat-option *ngFor="let language of languages" [value]="language.value">
-        {{ language.viewValue }}
-      </mat-option>
-    </mat-select>
-  </mat-form-field> -->
   <mat-icon (click)="toggleLeftSidenav()" class="side-menu-icon submenu"
     >menu</mat-icon
   >

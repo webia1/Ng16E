@@ -1,6 +1,8 @@
 <div class="app-login-example">
   <form [formGroup]="form" (ngSubmit)="onSubmit(model)">
-    <div class="app-margin-bottom-std app-teaser-box-std">Login</div>
+    <div class="app-margin-bottom-std app-teaser-box-std">
+      {{ 'LOGIN' | translate | uppercase }}
+    </div>
     <formly-form [form]="form" [fields]="fields" [model]="model"></formly-form>
     <div class="btn-wrapper">
       <button mat-raised-button color="primary" type="submit">Submit</button>

@@ -1,10 +1,15 @@
 {
+  "APP_HEADER_TITLE": "App Kopfzeile",
+  "APP_LEFT_SIDENAV_TITLE": "Links Sidenav Titel",
+  "APP_RIGHT_SIDENAV_TITLE": "Rechts Sidenav Titel",
   "DASHBOARD_TITLE": "Dasboard Titel",
+  "FOOTER": "Fußzeile",
   "FORM_EMAIL_LABEL": "E-Mail",
   "FORM_EMAIL_PLACEHOLDER": "E-Mail eingeben",
   "FORM_LOGIN_PASSWORD_LABEL": "Passwort",
   "FORM_LOGIN_PASSWORD_PLACEHOLDER": "Bitte geben Sie Ihr Passwort ein.",
   "FORM_LOGIN_USERNAME_LABEL": "Benutzername",
   "FORM_LOGIN_USERNAME_PLACEHOLDER": "Bitte geben Sie Ihren Benutzernamen ein.",
+  "LOGIN": "Login",
   "VALIDATION_REQUIRED": "Dieses Feld ist erforderlich."
 }

@@ -1,9 +1,15 @@
 {
-    "FORM_EMAIL_LABEL": "Email",
-    "FORM_EMAIL_PLACEHOLDER": "Enter your email",
-    "FORM_LOGIN_PASSWORD_LABEL": "Login Password",
-    "FORM_LOGIN_PASSWORD_PLACEHOLDER": "Enter your password",
-    "FORM_LOGIN_USERNAME_LABEL": "Login Username",
-    "FORM_LOGIN_USERNAME_PLACEHOLDER": "Enter your username",
-    "VALIDATION_REQUIRED": "This field is required."
+  "APP_HEADER_TITLE": "App Header",
+  "APP_LEFT_SIDENAV_TITLE": "Left Sidenav Title",
+  "APP_RIGHT_SIDENAV_TITLE": "Right Sidenav Title",
+  "DASHBOARD_TITLE": "Dasboard Title",
+  "FOOTER": "Footer",
+  "FORM_EMAIL_LABEL": "Email",
+  "FORM_EMAIL_PLACEHOLDER": "Enter your email",
+  "FORM_LOGIN_PASSWORD_LABEL": "Login Password",
+  "FORM_LOGIN_PASSWORD_PLACEHOLDER": "Enter your password",
+  "FORM_LOGIN_USERNAME_LABEL": "Login Username",
+  "FORM_LOGIN_USERNAME_PLACEHOLDER": "Enter your username",
+  "LOGIN": "Login",
+  "VALIDATION_REQUIRED": "This field is required."
 }
