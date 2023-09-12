@@ -26,7 +26,7 @@ This ReadMe-Document can also be read by AI agents. This is the reason for the f
   - Here we have to give an example: `apps/basis-app`
     - Its only global style is here: [apps/basis-app/src/styles.scss](/apps/basis-app/src/styles.scss)
     - Let's say we create a new app called "xyz": its global stylesheet will be at:
-      `apps/xyu-app/src/styles.scss`
+      `apps/xyz-app/src/styles.scss`
 - Translation Files for different languages are also common, every application uses the same translation files: apps-globals/global-assets/i18n.
   - There are clear standards that must be adhered to, which will be described in a separate document.
   - The first rule: all keys are kept flat.
