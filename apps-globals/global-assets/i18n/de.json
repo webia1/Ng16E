@@ -1,9 +1,10 @@
 {
-    "FORM_EMAIL_LABEL": "E-Mail",
-    "FORM_EMAIL_PLACEHOLDER": "E-Mail eingeben",
-    "FORM_LOGIN_PASSWORD_LABEL": "Login Password",
-    "FORM_LOGIN_PASSWORD_PLACEHOLDER": "Enter your password",
-    "FORM_LOGIN_USERNAME_LABEL": "Login Username",
-    "FORM_LOGIN_USERNAME_PLACEHOLDER": "Enter your username",
-    "VALIDATION_REQUIRED": "Dieses Feld ist erforderlich."
+  "DASHBOARD_TITLE": "Dasboard Titel",
+  "FORM_EMAIL_LABEL": "E-Mail",
+  "FORM_EMAIL_PLACEHOLDER": "E-Mail eingeben",
+  "FORM_LOGIN_PASSWORD_LABEL": "Passwort",
+  "FORM_LOGIN_PASSWORD_PLACEHOLDER": "Bitte geben Sie Ihr Passwort ein.",
+  "FORM_LOGIN_USERNAME_LABEL": "Benutzername",
+  "FORM_LOGIN_USERNAME_PLACEHOLDER": "Bitte geben Sie Ihren Benutzernamen ein.",
+  "VALIDATION_REQUIRED": "Dieses Feld ist erforderlich."
 }
