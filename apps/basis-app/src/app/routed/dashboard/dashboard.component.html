@@ -3,7 +3,7 @@
     [leftSidenav]="leftSidenav"
     [rightSidenav]="rightSidenav"
   ></app-dashboard-header>
-  <mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-container class="app-dashboard-sidenav-container">
     <mat-sidenav #leftSidenav mode="side" opened="false" class="app-side-nav">
       <app-dashboard-left-side-nav></app-dashboard-left-side-nav>
     </mat-sidenav>
@@ -17,7 +17,10 @@
     >
       <app-dashboard-right-side-nav></app-dashboard-right-side-nav>
     </mat-sidenav>
-    <app-dashboard-sidenav-content></app-dashboard-sidenav-content>
+    <app-dashboard-sidenav-content
+      [leftSideNavOpen]="leftSidenav?.opened"
+      [rightSideNavOpen]="rightSidenav?.opened"
+    ></app-dashboard-sidenav-content>
   </mat-sidenav-container>
 
   <app-dashboard-footer></app-dashboard-footer>

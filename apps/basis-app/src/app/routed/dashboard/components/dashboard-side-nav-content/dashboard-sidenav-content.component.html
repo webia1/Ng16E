@@ -1,5 +1,17 @@
-<mat-sidenav-content class="sidenav-content">
-  <div class="main-content">
+<mat-sidenav-content
+  class="sidenav-content"
+  [ngClass]="{
+    'left-sidenav-open-minus-margin': leftSideNavOpen,
+    'right-sidenav-open-minus-margin': rightSideNavOpen
+  }"
+>
+  <div
+    [ngClass]="{
+      'left-sidenav-open-plus-margin': leftSideNavOpen,
+      'right-sidenav-open-plus-margin': rightSideNavOpen
+    }"
+  >
     <h1>{{ 'DASHBOARD_TITLE' | translate }}</h1>
+    <p>Content...</p>
   </div>
 </mat-sidenav-content>
