@@ -57,3 +57,40 @@ This ReadMe-Document can also be read by AI agents. This is the reason for the f
 - The project uses ESLint for linting, as indicated by the `.eslintrc.json` file in the root directory.
 - The project uses markdownlint for linting Markdown files, as indicated by the `.markdownlint.json` file in the root directory.
 - The `cypress.config.ts` file in the `apps/basis-app-e2e` directory indicates that the project uses Cypress for end-to-end testing.
+
+## Colors
+
+To efficiently handle the color design aspects of a frontend application, we need to establish a simple "grammar." Using "light," "dark," "lighter," and "darker" allows us to define only a limited number of shades, and it can be challenging for a person to mentally sort them by color.
+
+We need to find a way for colors to have distinct characteristics. The names should be easy to remember and evoke a certain mental image. Additionally, by using these terms, we create specific contrast ratios that make it easier to adhere to usability and accessibility guidelines.
+
+Moreover, this approach facilitates collaboration within our team. When everyone refers to the same set of color shades, it eliminates confusion and ensures that our design discussions are more precise and productive.
+
+The color concept is still in development, and every constructive suggestion is explicitly welcome. The following table provides a basis for discussion. These terms can be combined with any color and these 24 shades are sorted (from darkest to lightest).
+
+| Number | Shade      | Description            |
+| ------ | ---------- | ---------------------- |
+| 1      | Deep       | Dark and intense       |
+| 2      | Rich       | Luxuriously dark       |
+| 3      | Intense    | Highly concentrated    |
+| 4      | Bold       | Strikingly dark        |
+| 5      | Vibrant    | Energetically bright   |
+| 6      | Muted      | Subdued and toned down |
+| 7      | Subtle     | Delicately understated |
+| 8      | Soft       | Gentle and smooth      |
+| 9      | Faint      | Barely noticeable      |
+| 10     | Pale       | Light and delicate     |
+| 11     | Vivid      | Intensely bright       |
+| 12     | Luminous   | Radiantly shining      |
+| 13     | Saturated  | Fully enriched         |
+| 14     | Dense      | Closely packed         |
+| 15     | Crisp      | Sharply defined        |
+| 16     | Glowing    | Emitting a soft glow   |
+| 17     | Sharp      | Crisply detailed       |
+| 18     | Sheer      | Diaphanously thin      |
+| 19     | Glossy     | Reflectively shiny     |
+| 20     | Matte      | Non-reflective, flat   |
+| 21     | Opulent    | Lavishly luxurious     |
+| 22     | Sleek      | Smooth and streamlined |
+| 23     | Harmonious | Elegantly balanced     |
+| 24     | Ethereal   | Delicately heavenly    |
