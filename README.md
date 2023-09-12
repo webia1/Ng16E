@@ -1,3 +1,5 @@
+> Document Status: In progress
+
 # Enterprise Angular/NestJS Apps with Nx
 
 This ReadMe-Document can also be read by AI agents. This is the reason for the following writing style.
