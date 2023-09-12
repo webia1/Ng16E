@@ -77,6 +77,7 @@
   "name": "@basis/source",
   "private": true,
   "scripts": {
+    "generateReport": "./shell/scan.sh",
     "start": "npm run start:fe:be:basis",
     "start:be:basis": "nx serve middleware-basis-app",
     "start:fe:basis": "nx serve basis-app",
