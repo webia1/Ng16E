@@ -36,28 +36,28 @@ if (Array.isArray(colorsPredefined) && colorsPredefined.length > 0) {
   console.warn('No predefined colors found!');
 }
 
-function generateNames(colorsPredefined: Array<string>) {
+async function generateNames(colorsPredefined: Array<string>) {
   console.log('Current predefined colors: ', colorsPredefined);
-  colorsPredefined.forEach((color) => {
-    const currentColorPath = `../${relativeThemePath}/${color}.ts`;
-    console.log('Current Colorpath: ', currentColorPath);
+  const generatedColorNames: GeneratedColorNamesType = {};
+  await Promise.all(
+    colorsPredefined.map(async (color) => {
+      const currentColorPath = `../${relativeThemePath}/${color}.ts`;
+      console.log('Current Colorpath: ', currentColorPath);
 
-    import(currentColorPath).then((module) => {
+      const module = await import(currentColorPath);
       const colorArray = module[color];
       if (colorArray.length === shadeNames.length) {
-        enum generatedColorNames {}
         colorArray.forEach((colorString: string, index: number) => {
           generatedColorNames[color + shadeNames[index]] = colorString;
         });
-
-        writeGeneratedColorNames(generatedColorNames);
       } else {
         console.error(
           `Error: Length Mismatch! ShadeNamesLength: ${shadeNames.length} and ${color}ArrayLength = ${colorArray.length}`
         );
       }
-    });
-  });
+    })
+  );
+  writeGeneratedColorNames(generatedColorNames);
 }
 
 function writeGeneratedColorNames(
