@@ -1,6 +1,7 @@
-import { Farbkreis } from '../theme/common/farbkreis';
 import * as fs from 'fs';
-import { ShadeDescriptions, ShadeNames } from './generator-data';
+
+import { Farbkreis } from '../theme/common/farbkreis';
+import { ShadeNames } from './generator-data';
 
 /**
  * Local Types
@@ -17,12 +18,15 @@ type GeneratedColorNamesType = {
 const theme = 'standard';
 const farbkreis = Farbkreis;
 const relativeThemePath = `theme/${theme}/colors`;
-const colorPath = `apps-shared-libs/utility/color/theme/${theme}/colors`;
-const shadeDescriptions = ShadeDescriptions;
+const globalStylesPath =
+  'apps-globals/global-assets/styles/global-css-variables';
+const generatedColorsPath = '/generated/colors-generated.scss';
+const namedColorsPath = globalStylesPath + generatedColorsPath;
+const predefinedColors = `apps-shared-libs/utility/color/theme/${theme}/colors`;
 const shadeNames = ShadeNames;
 
 const colorsPredefined = farbkreis.filter((color) => {
-  const fileName = `${colorPath}/${color}.ts`;
+  const fileName = `${predefinedColors}/${color}.ts`;
   return fs.existsSync(fileName);
 });
 
@@ -60,18 +64,28 @@ function writeGeneratedColorNames(
   generatedColorNames: GeneratedColorNamesType
 ) {
   console.log('Generated Color Names:', generatedColorNames);
-  // Write generated colors to file
-  const filePath =
-    'apps-globals/global-assets/styles/global-css-variables/generated/colors-generated.scss';
-  let fileContent = '';
-  for (const [key, value] of Object.entries(generatedColorNames)) {
-    fileContent += `$${key}: ${value};\n`;
-  }
-  fs.writeFile(filePath, fileContent, (err) => {
-    if (err) {
-      console.error(`Error writing to file ${filePath}: `, err);
+
+  const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+  readline.question('Overwriting allowed? (y/N) ', (answer = 'n') => {
+    if (answer.toLowerCase() === 'y') {
+      let fileContent = '';
+      for (const [key, value] of Object.entries(generatedColorNames)) {
+        fileContent += `$${key}: ${value};\n`;
+      }
+      fs.writeFile(namedColorsPath, fileContent, (err) => {
+        if (err) {
+          console.error(`Error writing to file ${namedColorsPath}: `, err);
+        } else {
+          console.log(`Successfully wrote to file ${namedColorsPath}`);
+        }
+      });
     } else {
-      console.log(`Successfully wrote to file ${filePath}`);
+      console.log('Aborted writing to file.');
     }
+    readline.close();
   });
 }
