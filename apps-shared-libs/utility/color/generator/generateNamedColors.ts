@@ -58,15 +58,7 @@ async function generateNames(colorsPredefined: Array<string>) {
     })
   );
 
-  /**
-   * Sort Generated Colornames
-   */
-
-  const sortedGeneratedColorNames = Object.fromEntries(
-    Object.entries(generatedColorNames).sort()
-  );
-
-  writeGeneratedColorNames(sortedGeneratedColorNames);
+  writeGeneratedColorNames(generatedColorNames);
 }
 
 function writeGeneratedColorNames(

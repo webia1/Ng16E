@@ -1,43 +1,43 @@
 {
-  "version": "2.0.0",
   "tasks": [
     {
-      "label": "Start FE Basis",
-      "type": "shell",
       "command": "nx serve basis-app",
+      "label": "Start FE Basis",
+      "options": {
+        "statusbar": {
+          "hide": true,
+          "label": "FE BASIS"
+        }
+      },
       "presentation": {
         "panel": "new"
       },
-      "options": {
-        "statusbar": {
-          "label": "FE BASIS",
-          "hide": true
-        }
-      },
-      "problemMatcher": []
+      "problemMatcher": [],
+      "type": "shell"
     },
     {
-      "label": "Start BE Basis",
-      "type": "shell",
       "command": "nx serve middleware-basis-app",
+      "label": "Start BE Basis",
+      "options": {
+        "statusbar": {
+          "hide": true,
+          "label": "BE BASIS"
+        }
+      },
       "presentation": {
         "panel": "new"
       },
-      "options": {
-        "statusbar": {
-          "label": "BE BASIS",
-          "hide": true
-        }
-      },
-      "problemMatcher": []
+      "problemMatcher": [],
+      "type": "shell"
     },
     {
+      "dependsOn": ["Start BE Basis", "Start FE Basis"],
       "label": "Start FE/BE Basis",
-      "dependsOn": ["Start FE Basis", "Start BE Basis"],
+      "problemMatcher": ["$webpack-builder"],
       "runOptions": {
         "runOn": "default"
-      },
-      "problemMatcher": ["$webpack-builder"]
+      }
     }
-  ]
+  ],
+  "version": "2.0.0"
 }
