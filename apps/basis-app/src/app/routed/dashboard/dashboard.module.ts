@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { CustomFormlyModule } from '@app-shared-libs/formly';
-import { CustomMaterialModule } from '@app-shared-libs/material';
+import { CustomFormlyModule } from '@apps-shared-libs/formly';
+import { CustomMaterialModule } from '@apps-shared-libs/material';
 
 import { DashboardFooterComponent } from './components/dashboard-footer/dashboard-footer.component';
 import { HeaderLangSettingComponent } from './components/dashboard-header/components/header-lang-setting/header-lang-setting.component';

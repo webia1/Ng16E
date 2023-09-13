@@ -1,3 +1,6 @@
+@import 'units';
+@import 'colors';
+
 .app-login-example {
   display: flex;
   flex-direction: column;
@@ -16,17 +19,17 @@
 }
 
 .app-teaser-box-std {
-  height: 100px;
+  height: $app-teaser-box-height;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(
     to bottom right,
-    #018043 0%,
-    #01783d 30%,
-    #016d34 60%,
-    #01632c 100%
+    $greenBold 0%,
+    $greenSoft 30%,
+    $greenSublime 60%,
+    $greenIntense 100%
   );
   font-size: x-large;
   color: white;
@@ -37,5 +40,5 @@
 }
 
 .app-margin-bottom-std {
-  margin-bottom: 20px;
+  margin-bottom: $app-double-space;
 }

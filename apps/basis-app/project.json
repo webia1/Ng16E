@@ -40,8 +40,8 @@
           "apps/basis-app/src/assets",
           {
             "glob": "**/*",
-            "input": "apps-globals/global-assets/i18n/",
-            "output": "global-assets/i18n/"
+            "input": "apps-globals/global-assets/",
+            "output": "global-assets/"
           }
         ],
         "index": "apps/basis-app/src/index.html",
@@ -54,6 +54,9 @@
           "apps-globals/global-assets/styles/apps-globals-basis.scss",
           "apps/basis-app/src/styles.scss"
         ],
+        "stylePreprocessorOptions": {
+          "includePaths": ["apps/basis-app/src/assets/styles"]
+        },
         "tsConfig": "apps/basis-app/tsconfig.app.json"
       },
       "outputs": ["{options.outputPath}"]

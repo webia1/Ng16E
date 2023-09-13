@@ -1,18 +1,24 @@
+@import 'units';
+
 .sidenav-content {
-  padding: 0px 20px;
+  padding: 0px $app-double-space;
 }
 
+/*
+ * TODO: Can be more performant without "!important"
+ */
+
 .left-sidenav-open-minus-margin {
-  margin-left: -320px !important;
+  margin-left: -$app-side-nav-std-width !important;
 }
 
 .left-sidenav-open-plus-margin {
-  margin-left: 320px !important;
+  margin-left: $app-side-nav-std-width !important;
 }
 .right-sidenav-open-minus-margin {
-  margin-right: -320px !important;
+  margin-right: -$app-side-nav-std-width !important;
 }
 
 .right-sidenav-open-plus-margin {
-  margin-right: 320px !important;
+  margin-right: $app-side-nav-std-width !important;
 }

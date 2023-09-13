@@ -1,9 +1,21 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  flex: 0 0 auto;
-}
+@import 'colors';
+@import 'units';
+.app-header-container {
+  .mat-toolbar {
+    background-color: $greenRich;
+    color: $graysBright;
 
-.spacer {
-  flex: 1;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      flex: 0 0 auto;
+    }
+    .spacer {
+      flex: 1;
+    }
+
+    .mat-icon {
+      margin-left: $app-std-space;
+    }
+  }
 }

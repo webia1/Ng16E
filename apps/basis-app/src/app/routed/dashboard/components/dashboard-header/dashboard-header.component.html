@@ -1,10 +1,12 @@
-<mat-toolbar class="header">
-  {{ 'APP_HEADER_TITLE' | translate }}
-  <span class="spacer"></span>
-  <mat-icon (click)="toggleLeftSidenav()" class="side-menu-icon submenu"
-    >menu</mat-icon
-  >
-  <mat-icon (click)="toggleRightSidenav()" class="side-menu-icon settings"
-    >settings</mat-icon
-  >
-</mat-toolbar>
+<div class="app-header-container">
+  <mat-toolbar class="header">
+    {{ 'APP_HEADER_TITLE' | translate }}
+    <span class="spacer"></span>
+    <mat-icon (click)="toggleLeftSidenav()" class="side-menu-icon submenu"
+      >menu</mat-icon
+    >
+    <mat-icon (click)="toggleRightSidenav()" class="side-menu-icon settings"
+      >settings</mat-icon
+    >
+  </mat-toolbar>
+</div>

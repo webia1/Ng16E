@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'units';
 
 html,
 body {
@@ -7,8 +7,7 @@ body {
 }
 
 body {
-  font-size: 16px;
-  background-color: $greenSoft;
+  font-size: $app-body-font-size;
 }
 
 hr {
@@ -19,10 +18,10 @@ hr {
 }
 
 .app-side-nav {
-  width: 320px;
-  padding: 10px;
+  width: $app-side-nav-std-width;
+  padding: $app-std-space;
 
   .app-side-menu-titel {
-    padding: 0 5px;
+    padding: 0 $app-half-space;
   }
 }
