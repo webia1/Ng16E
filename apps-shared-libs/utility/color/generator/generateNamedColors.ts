@@ -19,8 +19,8 @@ const theme = 'standard';
 const farbkreis = Farbkreis;
 const relativeThemePath = `theme/${theme}/colors`;
 const globalStylesPath =
-  'apps-globals/global-assets/styles/global-css-variables';
-const generatedColorsPath = '/generated/colors-generated.scss';
+  'apps-globals/global-assets/styles/global-css-variables/';
+const generatedColorsPath = 'colors.scss';
 const namedColorsPath = globalStylesPath + generatedColorsPath;
 const predefinedColors = `apps-shared-libs/utility/color/theme/${theme}/colors`;
 const shadeNames = ShadeNames;
