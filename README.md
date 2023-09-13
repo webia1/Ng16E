@@ -1,6 +1,6 @@
-> Document Status: In progress
-
 # Enterprise Angular/NestJS Apps with Nx
+
+> Document Status: In progress
 
 This ReadMe-Document can also be read by AI agents. This is the reason for the following writing style.
 
@@ -66,31 +66,13 @@ We need to find a way for colors to have distinct characteristics. The names sho
 
 Moreover, this approach facilitates collaboration within our team. When everyone refers to the same set of color shades, it eliminates confusion and ensures that our design discussions are more precise and productive.
 
-The color concept is still in development, and every constructive suggestion is explicitly welcome. The following table provides a basis for discussion. These terms can be combined with any color and these 24 shades are sorted (from darkest to lightest).
+## Miscellaneous
 
-| Number | Shade      | Description            |
-| ------ | ---------- | ---------------------- |
-| 1      | Deep       | Dark and intense       |
-| 2      | Rich       | Luxuriously dark       |
-| 3      | Intense    | Highly concentrated    |
-| 4      | Bold       | Strikingly dark        |
-| 5      | Vibrant    | Energetically bright   |
-| 6      | Muted      | Subdued and toned down |
-| 7      | Subtle     | Delicately understated |
-| 8      | Soft       | Gentle and smooth      |
-| 9      | Faint      | Barely noticeable      |
-| 10     | Pale       | Light and delicate     |
-| 11     | Vivid      | Intensely bright       |
-| 12     | Luminous   | Radiantly shining      |
-| 13     | Saturated  | Fully enriched         |
-| 14     | Dense      | Closely packed         |
-| 15     | Crisp      | Sharply defined        |
-| 16     | Glowing    | Emitting a soft glow   |
-| 17     | Sharp      | Crisply detailed       |
-| 18     | Sheer      | Diaphanously thin      |
-| 19     | Glossy     | Reflectively shiny     |
-| 20     | Matte      | Non-reflective, flat   |
-| 21     | Opulent    | Lavishly luxurious     |
-| 22     | Sleek      | Smooth and streamlined |
-| 23     | Harmonious | Elegantly balanced     |
-| 24     | Ethereal   | Delicately heavenly    |
+### Global Packages
+
+Please install following packages globally:
+
+```shell
+npm i -g nx
+npm i -g tsx
+```
