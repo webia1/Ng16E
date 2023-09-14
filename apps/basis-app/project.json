@@ -42,6 +42,11 @@
             "glob": "**/*",
             "input": "apps-globals/global-assets/",
             "output": "global-assets/"
+          },
+          {
+            "glob": "**/*.json",
+            "input": "apps-globals/global-assets/i18n",
+            "output": "./i18n"
           }
         ],
         "index": "apps/basis-app/src/index.html",
