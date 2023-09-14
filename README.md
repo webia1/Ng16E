@@ -2,6 +2,24 @@
 
 > Document Status: In progress
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=4 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Project related details](#project-related-details)
+  - [Single Angular App: Basis-App](#single-angular-app-basis-app)
+  - [Single Middleware App: Middleware Basis-App](#single-middleware-app-middleware-basis-app)
+- [Global Details](#global-details)
+- [Colors](#colors)
+- [Further Reading](#further-reading)
+  - [Security](#security)
+  - [State Management](#state-management)
+  - [Testing](#testing)
+- [Miscellaneous](#miscellaneous)
+  - [Global Packages](#global-packages)
+
+<!-- /code_chunk_output -->
+
 This ReadMe-Document can also be read by AI agents. This is the reason for the following writing style.
 
 ## Project related details
@@ -36,7 +54,13 @@ This ReadMe-Document can also be read by AI agents. This is the reason for the f
   - After each change, the language file is sorted to avoid later merge conflicts. (Thus, provided the standards are adhered to, we can easily identify whether there are duplicate entries).
   - More details will follow.
 
-### Example Basis
+### Single Angular App: Basis-App
+
+Details coming soon.
+
+### Single Middleware App: Middleware Basis-App
+
+Details coming soon.
 
 ## Global Details
 
@@ -65,6 +89,16 @@ To efficiently handle the color design aspects of a frontend application, we nee
 We need to find a way for colors to have distinct characteristics. The names should be easy to remember and evoke a certain mental image. Additionally, by using these terms, we create specific contrast ratios that make it easier to adhere to usability and accessibility guidelines.
 
 Moreover, this approach facilitates collaboration within our team. When everyone refers to the same set of color shades, it eliminates confusion and ensures that our design discussions are more precise and productive.
+
+## Further Reading
+
+### Security
+
+Authentication, JWT Tokens, Certificates
+
+### State Management
+
+### Testing
 
 ## Miscellaneous
 
