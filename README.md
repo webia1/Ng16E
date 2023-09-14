@@ -15,6 +15,8 @@
   - [Security](#security)
   - [State Management](#state-management)
   - [Testing](#testing)
+  - [Documentation](#documentation)
+  - [Workshops](#workshops)
 - [Miscellaneous](#miscellaneous)
   - [Global Packages](#global-packages)
 
@@ -99,6 +101,23 @@ Authentication, JWT Tokens, Certificates
 ### State Management
 
 ### Testing
+
+- Jest (Unit/Integration)
+- Cypress (E2E) / Puppeteer
+
+### Documentation
+
+- Storybook Integration
+- XD Integration
+
+### Workshops
+
+- Git
+- TypeScript
+- Reactive Extensions (RxJS)
+- State Management (NGXS)
+- Testen allg.
+- Formly (During Implementations)
 
 ## Miscellaneous
 
