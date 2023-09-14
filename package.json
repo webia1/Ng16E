@@ -78,7 +78,7 @@
   "name": "@basis/source",
   "private": true,
   "scripts": {
-    "generateNamedColors": "tsx apps-shared-libs/utility/color/generator/generateNamedColors.ts --watch",
+    "generateNamedColors": "tsx apps-shared-libs/utility/color/generator/generateNamedColors.ts",
     "generateReport": "./tools/shell/scan.sh",
     "start": "npm run start:fe:be:basis",
     "start:be:basis": "nx serve middleware-basis-app",
