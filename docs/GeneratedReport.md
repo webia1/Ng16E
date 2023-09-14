@@ -86,6 +86,9 @@ apps
 │   │   │           ├── demos-routing.module.ts
 │   │   │           └── demos.module.ts
 │   │   ├── assets
+│   │   │   └── styles
+│   │   │       ├── colors.scss
+│   │   │       └── units.scss
 │   │   ├── favicon.ico
 │   │   ├── index.html
 │   │   ├── main.ts
@@ -138,7 +141,7 @@ apps
     ├── tsconfig.json
     └── tsconfig.spec.json
 
-36 directories, 96 files
+37 directories, 98 files
 ```
 
 ### ./apps-globals
@@ -175,6 +178,9 @@ apps-globals
 
 ```shell
 apps-shared-libs
+├── alex-library
+│   └── src
+│       └── lib
 ├── formly
 │   ├── README.md
 │   ├── jest.config.ts
@@ -197,23 +203,35 @@ apps-shared-libs
 │   ├── tsconfig.lib.json
 │   ├── tsconfig.lib.prod.json
 │   └── tsconfig.spec.json
-└── material
-    ├── README.md
-    ├── jest.config.ts
-    ├── ng-package.json
-    ├── package.json
-    ├── project.json
-    ├── src
-    │   ├── index.ts
-    │   ├── lib
-    │   │   └── custom-material.module.ts
-    │   └── test-setup.ts
-    ├── tsconfig.json
-    ├── tsconfig.lib.json
-    ├── tsconfig.lib.prod.json
-    └── tsconfig.spec.json
+├── material
+│   ├── README.md
+│   ├── jest.config.ts
+│   ├── ng-package.json
+│   ├── package.json
+│   ├── project.json
+│   ├── src
+│   │   ├── index.ts
+│   │   ├── lib
+│   │   │   └── custom-material.module.ts
+│   │   └── test-setup.ts
+│   ├── tsconfig.json
+│   ├── tsconfig.lib.json
+│   ├── tsconfig.lib.prod.json
+│   └── tsconfig.spec.json
+└── utility
+    └── color
+        ├── generator
+        │   ├── generateNamedColors.ts
+        │   └── generator-data.ts
+        └── theme
+            ├── common
+            │   └── farbkreis.ts
+            └── standard
+                └── colors
+                    ├── grays.ts
+                    └── green.ts
 
-12 directories, 26 files
+22 directories, 31 files
 ```
 
 ## Routen
