@@ -1,6 +1,6 @@
 {
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "basis-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "prefix": "app",
   "projectType": "application",
   "sourceRoot": "apps/basis-app/src",
@@ -116,6 +116,13 @@
         "passWithNoTests": true
       },
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"]
+    },
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "outputs": ["{workspaceRoot}/dist/.playwright/apps/basis-app"],
+      "options": {
+        "config": "apps/basis-app/playwright.config.ts"
+      }
     }
   }
 }
